@@ -55,7 +55,7 @@ const Contact = () => {
         <ContactLeft />
 
         {/* Right Section */}
-        <div className="w-full lg:w-[60%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne">
+        <div className="w-72 lg:w-[60%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne">
           <form className="flex flex-col gap-6">
             {errMsg && (
               <p className="py-3 text-center text-orange-500 text-base tracking-wide animate-bounce">

@@ -63,7 +63,7 @@ const Testimonial = () => {
   return (
     <section
       id="testimonial"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full  py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
         <Title title="WHAT CLIENTS SAY" des="Testimonial" />
@@ -140,9 +140,9 @@ const Testimonial = () => {
                 <div className="text-center lg:text-left">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                    
-                    Bound - Trolola
+                    Subett - roff
                   </p>
-                  <h3 className="text-xl lg:text-2xl font-bold">Anne hathway </h3>
+                  <h3 className="text-xl lg:text-2xl font-bold">Conner flores </h3>
                   <p className="text-sm lg:text-base tracking-wide text-gray-500">
                     Product Manager
                   </p>
@@ -196,7 +196,7 @@ const Testimonial = () => {
                    
                     Hardy - Morela
                   </p>
-                  <h3 className="text-xl lg:text-2xl font-bold">Anne hathway </h3>
+                  <h3 className="text-xl lg:text-2xl font-bold">Eli hughes </h3>
                   <p className="text-sm lg:text-base tracking-wide text-gray-500">
                     Software Developer
                   </p>

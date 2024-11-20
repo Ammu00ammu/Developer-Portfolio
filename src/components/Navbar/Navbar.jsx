@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/Logop2.png';
+import logo from '../../assets/Logop7.svg';
 import { navLinksData } from '../../constants';
 import { Link } from 'react-scroll';
 
@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full sticky top-0 z-50  bg-bodyColor h-24 mx-auto flex justify-between items-center px-5 lg:px-10 border-b-[1px] border-b-gray-600">
+    <div className="w-full sticky top-0 z-50  bg-bodyColor h-28 lg:h-34 mx-auto flex justify-between items-center px-5 lg:px-10 border-b-[1px] border-b-gray-600">
       {/* Logo */}
       <div>
         <img
-          className="rounded-full w-32 sm:w-32 md:w-32 lg:w-32 object-cover shadow-lg "
+          className=" w-24 sm:w-32 md:w-32 lg:w-32 "
           src={logo}
           alt="Logo"
         />

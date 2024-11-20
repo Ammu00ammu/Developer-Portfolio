@@ -12,7 +12,7 @@ const Resume = () => {
 
 
   return (
-    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black pb-24">
+    <section id="resume" className="w-full h-auto py-20 border-b-[1px] border-b-black pb-24">
       <div className="flex justify-center items-center text-center">
         <Title title="1 YEAR OF EXPERIENCE" des="My Resume" />
       </div>
