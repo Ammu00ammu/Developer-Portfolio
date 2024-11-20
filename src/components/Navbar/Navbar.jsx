@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/Logop7.svg';
+import logo from '/Logop7.svg';
 import { navLinksData } from '../../constants';
 import { Link } from 'react-scroll';
 

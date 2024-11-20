@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import Logo from "../../assets/Logop7.svg";
+import Logo from "/Logop7.svg";
 
 const Footer = () => {
   return (
