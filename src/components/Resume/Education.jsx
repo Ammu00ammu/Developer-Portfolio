@@ -5,13 +5,13 @@ import { motion } from 'framer-motion'
 
 const Education = () => {
   return (
-    <motion.div initial={{opacity:0}} animate={{opacity:2, transition:{duration:2}}} className="w-full h-[1500px] flex gap-0">
+    <motion.div initial={{opacity:0}} animate={{opacity:2, transition:{duration:2}}} className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20">
         <div>
-          <div className="py-20 font-titleFont">
+          <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
             <p className="text-sm text-designColor tracking-[4px]">2008-2023</p>
-            <h2 className="text-4xl font-bold">Education Quality</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
           </div>
-          <div className="mt-3 w-full h-[1000px] lg:h-[1200px] border-1-[6px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+          <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
               title="Bechelor's In Computer Application"
               subTitle="Hemchand Yadav University (Durg University) (2020-2023)"

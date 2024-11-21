@@ -12,12 +12,12 @@ const Resume = () => {
 
 
   return (
-    <section id="resume" className="w-full h-auto py-20 border-b-[1px] border-b-black pb-24">
+    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
         <Title title="1 YEAR OF EXPERIENCE" des="My Resume" />
       </div>
-      <div className="mt-5">
-        <ul className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div>
+        <ul className="w-full grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-4 ">
           <li onClick={()=>
             setEducationData(true)&
             setSkillData(false)&

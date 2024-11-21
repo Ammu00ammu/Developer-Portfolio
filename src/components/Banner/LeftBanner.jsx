@@ -17,15 +17,15 @@ const LeftBanner = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full md:w-1/2 flex flex-col gap-10 p-5 sm:p-10">
+    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className="font-normal text-base sm:text-lg">
+        <h4 className="text-lg font-normal">
           WELCOME TO MY WORLD
         </h4>
-        <h1 className="text-4xl sm:text-6xl font-bold text-white">
+        <h1 className="text-6xl font-bold text-white">
           Hi, I'm{""} <span className="text-designColor ">Ankit Bhatt</span>
         </h1>
-        <h2 className="text-2xl sm:text-4xl font-bold text-white">
+        <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -33,16 +33,16 @@ const LeftBanner = () => {
             cursorColor="#ff014f"
           />
         </h2>
-        <p className="text-sm sm:text-base font-bodyFont leading-6 tracking-wide text-gray-300">
+        <p className="text-base font-bodyFont leading-6 tracking-wide">
           I have expertise in the MERN stack (MongoDB, Express, React, Node.js)
           and am well-versed in modern web development frameworks such as React,
           Tailwind CSS, and Bootstrap.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-between gap-10">
+      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
-          <h2 className="text-sm sm:text-base uppercase font-titleFont mb-4">
-            Find me
+          <h2 className="text-base uppercase font-titleFont mb-4">
+            Find me in
           </h2>
           <div className="flex gap-4 ">
             <a
@@ -50,7 +50,7 @@ const LeftBanner = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+              <span className="bannerIcon">
                 <FaFacebookF />
               </span>
             </a>
@@ -60,7 +60,7 @@ const LeftBanner = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+              <span className="bannerIcon">
                 <FaInstagram />
               </span>
             </a>
@@ -77,23 +77,23 @@ const LeftBanner = () => {
           </div>
         </div>
         <div>
-          <h2 className="text-sm sm:text-base uppercase font-titleFont mb-4 text-gray-400">
+          <h2 className="text-base uppercase font-titleFont mb-4">
             BEST SKILL ON
           </h2>
-          <div className="flex gap-4 flex-wrap ">
-            <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+          <div className="flex gap-4">
+            <span className="bannerIcon">
               <FaReact />
             </span>
-            <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+            <span className="bannerIcon">
               <SiTailwindcss />
             </span>
-            <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+            <span className="bannerIcon">
               <SiFigma />
             </span>
-            <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+            <span className="bannerIcon">
               <SiMongodb />
             </span>
-            <span className="bannerIcon text-lg sm:text-2xl text-gray-300 hover:text-designColor cursor-pointer">
+            <span className="bannerIcon">
               <SiNodedotjs />
             </span>
           </div>

@@ -4,9 +4,9 @@ import Logo from "/Logop7.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full py-10 lg:py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       {/* Logo and Social Icons */}
-      <div className="w-full h-full flex flex-col gap-6 items-center lg:items-start">
+      <div className="w-full h-full flex flex-col items-center gap-8 justify-center">
         <img
           className="rounded-full w-32 sm:w-32 md:w-32 lg:w-32 object-cover shadow-lg"
           src={Logo}
@@ -46,20 +46,20 @@ const Footer = () => {
       </div>
 
       {/* Quick Link Section */}
-      <div className="w-full h-full text-center lg:text-left">
-        <h3 className="text-lg sm:text-xl uppercase text-designColor tracking-wide">
+      <div className="w-full h-full flex flex-col items-center">
+        <h3 className="text-xl uppercase text-designColor tracking-wider">
           Quick Link
         </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6">
+        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           {["About", "Portfolio", "Services", "Blog", "Contact"].map(
             (item, index) => (
-              <li key={index} className="relative group">
+              <li key={index}>
                 {/* Text */}
-                <span className="w-full text-base sm:text-lg hover:text-designColor duration-300 cursor-pointer">
+                <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
                   {item}
                 </span>
                 {/* Underline */}
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-designColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
               </li>
             )
           )}
@@ -67,11 +67,11 @@ const Footer = () => {
       </div>
 
       {/* Resources Section */}
-      <div className="w-full h-full text-center lg:text-left">
-        <h3 className="text-lg sm:text-xl uppercase text-designColor tracking-wide">
+      <div className="w-full h-full flex flex-col items-center">
+        <h3 className="text-xl uppercase text-designColor tracking-wider">
           Resources
         </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6">
+        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           {[
             "Authentication",
             "System Status",
@@ -81,31 +81,31 @@ const Footer = () => {
           ].map((item, index) => (
             <li key={index} className="relative group">
               {/* Text */}
-              <span className="w-full text-base sm:text-lg hover:text-designColor duration-300 cursor-pointer">
+              <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
                 {item}
               </span>
               {/* Underline */}
-              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-designColor transition-all duration-300 group-hover:w-full"></span>
+              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </li>
           ))}
         </ul>
       </div>
 
       {/* Developers Section */}
-      <div className="w-full h-full text-center lg:text-left">
-        <h3 className="text-lg sm:text-xl uppercase text-designColor tracking-wide">
+      <div className="w-full h-full flex flex-col items-center">
+        <h3 className="text-xl uppercase text-designColor tracking-wider">
           Developers
         </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6">
+        <ul className="flex flex-col gap-4 font-titleFont font-medium overflow-hidden py-6">
           {["React", "Tailwind", "JavaScript", "MongoDB", "Node.js"].map(
             (item, index) => (
               <li key={index} className="relative group">
                 {/* Text */}
-                <span className="text-base sm:text-lg hover:text-designColor duration-300 cursor-pointer">
+                <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
                   {item}
                 </span>
                 {/* Underline */}
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-designColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
               </li>
             )
           )}

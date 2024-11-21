@@ -1,53 +1,21 @@
-import React from 'react'
-import Cards from './Cards'
-import { FaGlobe, FaMobile, FaBars } from 'react-icons/fa'
-import { SiAntdesign, SiProgress } from 'react-icons/si'
-import { AiFillAppstore } from 'react-icons/ai'
-import Title from '../layouts/Title'
-
+import React from "react";
+import Title from "../layouts/Title";
+import Card from "./Cards";
+import { featuresData } from "../data/data";
 const Features = () => {
   return (
-    <section id='features' className='w-full  py-20   border-b-[1px] border-b-black'>
-    
-    <Title title="Features" des="What I Do"
-    />   
-      
-      <div className='grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-20 lg:gap-15 sm:mr-16'>
-        <Cards 
-        title="Business Stratagy"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam libero pariatur cupiditate hic quae!"
-        icon={<FaBars />}
-        />
-        <Cards 
-        title="App Development"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam libero pariatur cupiditate hic quae!"
-        icon={<AiFillAppstore/>}
-        />
-        
-        <Cards 
-        title="SEO Optimisation"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam libero pariatur cupiditate hic quae!"
-        icon={<SiProgress/>}
-        />
-        
-        <Cards
-        title="Mobile Development"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam ammu bhatt best !"
-        icon={<FaMobile/>}
-        />
-        <Cards
-        title="UX Design"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam libero pariatur cupiditate hic quae!"
-        icon={<SiAntdesign/>}
-        />
-        <Cards
-        title="Hosting Websites"
-        des="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aliquam libero pariatur cupiditate hic quae!"
-        icon={<FaGlobe/>}
-        />
-        </div>
+    <section
+      id="features"
+      className="w-full py-20 border-b-[1px] border-b-black"
+    >
+      <Title title="Features" des="What I Do" />
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
+        {featuresData.map((item) => (
+          <Card item={item} key={item.id} />
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;
