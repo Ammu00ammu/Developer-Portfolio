@@ -31,7 +31,7 @@ function App() {
         </div>
       </div>
       <div className='fixed bottom-10 right-2 p-3 z-10'>
-        <a href="https://wa.me/919993682118?text=Hello How Can I help you ?" target='_blank'>
+        <a href="https://wa.me/919993682118?text=Hello Ankit sir" target='_blank' rel="noopener noreferrer">
           <img className=' w-16 h-16 rounded-full hover:scale-110 transition-transform duration-300' src={whatsappLogo} alt="" />
         </a>
       </div>
