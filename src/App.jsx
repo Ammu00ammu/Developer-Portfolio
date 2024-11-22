@@ -10,6 +10,7 @@ import Testimonial from './components/Testimonial/Testimonial'
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import FooterBottom from './components/Footer/FooterBottom';
+import whatsappLogo from './assets/whatsapp.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +29,11 @@ function App() {
         <Footer/>
         <FooterBottom/>
         </div>
+      </div>
+      <div className='fixed bottom-10 right-2 p-3 z-10'>
+        <a href="https://wa.me/919993682118?text=Hello How Can I help you ?" target='_blank'>
+          <img className=' w-16 h-16 rounded-full hover:scale-110 transition-transform duration-300' src={whatsappLogo} alt="" />
+        </a>
       </div>
     </>
   )
